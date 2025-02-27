@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>Generador de password</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <h1 id="title">Generador de contraseñas</h1>
+    <div class="generator">
+        <div class="password-container">
+            <h1>AhroeiasdQ</h1>
+            <i id="copyIcon" class="fas fa-copy"></i> <!-- Icono de copiar -->
+        </div>
+        <form>
+            <label for="input-password-length">Largo de la contraseña</label>
+            <div class="range-container">
+                <input type="range" min="1" max="20" id="input-password-length">
+                <h1>10</h1>
+            </div>
+            <div class="checkbox-container">
+                <div>
+                    <input type="checkbox" id="input-password-uppercase">
+                    <label for="input-password-uppercase">Incluir mayúsculas</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="input-password-lowercase">
+                    <label for="input-password-lowercase">Incluir minúsculas</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="input-password-numbers">
+                    <label for="input-password-numbers">Incluir números</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="input-password-special">
+                    <label for="input-password-special">Incluir caracteres especiales</label>
+                </div>
+            </div>
+            <button>Generar</button>
+        </form>
+    </div>
+</body>
+</html>
