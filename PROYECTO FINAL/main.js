@@ -1,6 +1,6 @@
 
 
-document.getElementById('Form').addEventListener('submit', function(event) {
+document.getElementById('commentForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
 
     const commentInput = document.getElementById('commentInput');
